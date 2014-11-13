@@ -8,10 +8,8 @@ class Menu
 			"Fajitas" => 8.00,
 			"Salsa" => 2.00,
 			"Guacamole" => 2.00,
-			"Chips" => 3.00
+			"Burrito" => 5.00
 		}
-		# @dish = params[:dish]
-		# @price = params[:price]
 	end
 
 	def count_dishes

@@ -5,7 +5,7 @@ describe Menu do
 	let(:menu) { Menu.new }
 
 	it 'should be able to add a dish and price' do
-		menu.add_dish("Burrito", 5.00)
+		menu.add_dish("Chips", 3.00)
 	end
 
 	it 'should have a selection of dishes' do
