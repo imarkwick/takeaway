@@ -1,27 +1,28 @@
-class Menu 
+class Menu
 
-	attr_reader :dish, :price
+	attr_reader :dishes, :price
 
 	def initialize
-		@menu = {:dish => :price}
-	end
-
-	def hungry_for
-		@takeout_menu = {
-			"Burrito" => 5.00,
+		@dishes = {
 			"Taccos" => 7.00,
+			"Fajitas" => 8.00,
 			"Salsa" => 2.00,
 			"Guacamole" => 2.00,
-			"Fajitas" => 8.00
+			"Chips" => 3.00
 		}
+		# @dish = params[:dish]
+		# @price = params[:price]
+	end
+
+	def count_dishes
+		@dishes.length
+	end
+
+	def add_dish(dish, price)
+		@dishes[dish] = price
 	end
 
 	def display_menu
-		hungry_for.each { |dish, price| puts "#{dish} £#{price}" }
-	end
-
-	def total_dishes
-		hungry_for.count
+		@dishes.each { |dish, price| puts "#{dish} £#{price}" }
 	end
 end
-
