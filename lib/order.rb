@@ -1,13 +1,12 @@
-require_relative 'dish_list'
-
 class Order
 
-	include DishList
+	attr_reader :dish, :price
 
-	# attr_accessor list_item
+	def new_order
+		new_order = {}
+	end
 
-	def initialize
-		@order = {}
-		@order_total = 0
+	def order_length
+		new_order.length
 	end
 end
