@@ -1,11 +1,13 @@
 class Message
 
-require 'rubygems'         
-require 'twilio-ruby'
+	require 'rubygems'         
+	require 'twilio-ruby'
+
+	attr_writer :send_message
  
 	def send_message
 
-		# Get your Account Sid and Auth Token from twilio.com/user/account
+		# Account Sid and Auth Token from twilio account
 		account_sid = 'AC27edebaedaa61d92ac1fad7187cf8a79'
 		auth_token = 'fbaf86e2f996bc18851e4c9d08ed38a6'
 
