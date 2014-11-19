@@ -5,7 +5,6 @@ describe Order do
 	let(:order) { Order.new }
 
 	it 'should begin with no dishes on the menu' do
-		order.new_order
 		expect(order.order_length).to eq 0
 	end
 
