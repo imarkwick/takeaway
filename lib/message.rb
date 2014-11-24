@@ -1,6 +1,5 @@
 class Message
-
-	require 'rubygems'         
+        
 	require 'twilio-ruby'
 
 	attr_writer :send_message
@@ -16,8 +15,8 @@ class Message
 		@client = Twilio::REST::Client.new account_sid, auth_token
 
 		@client.account.messages.create(:body => "Your order has been received and will be delivered before #{time}",
-		    :to => "+447766110048",
-		    :from => "+441592323039")
+		:to => "+447766110048",
+		:from => "+441592323039")
 	end
 
 end

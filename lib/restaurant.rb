@@ -1,3 +1,5 @@
+require 'twilio-ruby'
+
 class Restaurant
 
 	attr_reader :new_order
@@ -18,5 +20,4 @@ class Restaurant
 	def receives_new?
 		@new_order = true
 	end
-
 end

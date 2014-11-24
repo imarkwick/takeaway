@@ -4,7 +4,7 @@ describe Restaurant do
 
 	let(:restaurant) { Restaurant.new }
 	let(:order) { double :order }
-	let(:twilio_message) { double :twilio_message, :send_message => message }
+	let(:takeout) {double :restaurant, send_message: nil}
 
 	it 'should receive orders' do
 		restaurant.receives_order(order)
@@ -20,10 +20,9 @@ describe Restaurant do
 		expect(restaurant.receives_new?).to be true 
 	end
 
-	# it 'should send a confirmation message when order received' do
-		# allow(:twilio_message).to receive(:send_message)
-		# restaurant.receives_order(order)
-		# expect(restaurant.order_count).to eq 1
-	# end
-
+	it 'should send a confirmation message when order received' do
+		allow(order).to receive(:order_total)
+		allow(takeout).to receive(:send_message)
+		takeout.send_message
+	end
 end
