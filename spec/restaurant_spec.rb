@@ -2,9 +2,9 @@ require 'restaurant'
 
 describe Restaurant do
 
-	let(:restaurant) { Restaurant.new }
-	let(:order) { double :order }
-	let(:takeout) {double :restaurant, send_message: nil}
+	let(:restaurant) 	{ Restaurant.new }
+	let(:order) 			{ double :order }
+	let(:takeout) 		{ double :restaurant, send_message: nil }
 
 	it 'should receive orders' do
 		restaurant.receives_order(order)

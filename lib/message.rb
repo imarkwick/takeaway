@@ -6,7 +6,6 @@ class Message
  
 	def send_message
 
-		# Account Sid and Auth Token from twilio account
 		account_sid = 'AC27edebaedaa61d92ac1fad7187cf8a79'
 		auth_token = 'fbaf86e2f996bc18851e4c9d08ed38a6'
 
