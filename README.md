@@ -23,7 +23,7 @@ $ cd takeaway
 $ rspec
 ```
 
-## To send a message using the Twilio gem:
+## To send a message using Twilio:
 
 ```sh
 $ message = Message.new
