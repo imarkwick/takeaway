@@ -1,20 +1,31 @@
 # Takeaway app.
 
-Another weekend challenge set by Makers Academy, this one was designed as an introduction to the Twilio Gem and practice in mocking calls to external APIs.
+Weekend challenge set by Makers Academy, this one was designed as an introduction to the Twilio Gem and practice in mocking calls to external APIs.
 
-Requirements include:
-* list of dishes with prices
-* placing the order by giving the list of dishes, their quantities and a number that should be the exact total. The customer should be sent a text message saying the order was placed successfully and that it will be delivered 1 hour.
+## Objective:
+
+* List of dishes with prices
+* Place order by providing a list of dishes, their quantities and the exact total. 
+* The customer should be sent a text message saying the order was placed successfully with an estimated delivery time of 1 hour.
 * The text sending functionality should be implemented using Twilio API.
 
-To view tests, clone the repo and run rspec;
+## Technologies used:
+
+* Ruby
+* RSpec testing
+* Twilio api
+
+## How to run it:
 
 ```sh
+$ git clone https://github.com/imarkwick/takeaway.git
+$ cd takeaway
 $ rspec
 ```
 
-To send a message using the Twilio gem, create an instance of the class and use the send_message method.
+## To send a message using the Twilio gem:
 
 ```sh
+$ message = Message.new
 $ message.send_message
 ```
